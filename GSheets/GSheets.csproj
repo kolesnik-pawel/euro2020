@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.51.0.2272"/>
+    <PackageReference Include="RestSharp" Version="106.11.7"/>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="client_secrets.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>    
+  </ItemGroup>
+  <ItemGroup>
+      <None Update = "Json/Player.json">
+     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
+<ItemGroup>
+ <Content Include="Json/*">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+<ItemGroup>
+ <Content Include="HistoryBets/*">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+</Project>

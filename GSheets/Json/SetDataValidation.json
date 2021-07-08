@@ -1,0 +1,33 @@
+{
+    "requests": [
+      {
+        "setDataValidation": {
+          "range": {
+            "endColumnIndex": 1,
+            "endRowIndex": 1,
+            "sheetId": 220905523,
+            "startColumnIndex": 0,
+            "startRowIndex": 0
+          },
+          "rule": {
+            "condition": {
+              "type": "ONE_OF_LIST",
+              "values": [
+                {
+                  "userEnteredValue": "test_ 3"
+                },
+                {
+                  "userEnteredValue": "test 22"
+                },
+                {
+                  "userEnteredValue": "test3"
+                }
+              ]
+            },
+            "inputMessage": "Wiadomość"
+          }
+        }
+      }
+    ],
+    "includeSpreadsheetInResponse": false
+  }
